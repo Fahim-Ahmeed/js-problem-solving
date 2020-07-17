@@ -2,8 +2,12 @@
 function feetToMile(feet){
     let mile=feet/5280;
         mile=mile.toFixed(7);
+        mile=parseFloat(mile);
     return mile;
 } 
+let result=feetToMile(77990);
+console.log(result);
+
 
 //problem-2:woodCalculator;
 function woodCalculator(chair,table,bed){
@@ -20,27 +24,26 @@ function woodCalculator(chair,table,bed){
 function brickCalculator(floor){
     const perFeet=1000;
     if(floor>=1 && floor<=10){
-        perFloor=15;
-        bricks=perFeet*perFloor*floor;
+        let perFloor=15;
+        totalBricks=perFeet*perFloor*floor;
     }
    else if(floor>=11 && floor<=20){
-    overTen=floor-10;
-    bricks1=perFeet*10*15;
-    bricks2=perFeet*overTen*12;
-    bricks=bricks1+bricks2;
+    let overTen=floor-10;
+    let bricks1=perFeet*10*15;
+    let bricks2=perFeet*overTen*12;
+    totalBricks=bricks1+bricks2;
    }    
    
    else{
-       overTwenty=floor-20;
-       bricks1=perFeet*10*15;
-       bricks2=perFeet*10*12;
-       bricks3=perFeet*overTwenty*10;
-       bricks=bricks1+bricks2+bricks3;
+       let overTwenty=floor-20;
+       let bricks1=perFeet*10*15;
+       let bricks2=perFeet*10*12;
+       let bricks3=perFeet*overTwenty*10;
+       totalBricks=bricks1+bricks2+bricks3;
    }
    
-   return bricks;
+   return totalBricks ;
 }
-
 
 
 //problem-4:tinyFriend;
