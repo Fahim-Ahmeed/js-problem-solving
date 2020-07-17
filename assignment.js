@@ -1,8 +1,17 @@
 //problem-1:feetToMile;
 function feetToMile(feet){
     let mile=feet/5280;
-    let result=mile.toFixed(7);
-    return result;
+    return mile;
 } 
 
+
+
+//problem-2:woodCalculator;
+function woodCalculator(chair,table,bed){
+    chair=chair*4;
+    table=table*8;
+    bed=table*10;
+    let totalWood=chair+table+bed;
+    return totalWood;
+}
 
